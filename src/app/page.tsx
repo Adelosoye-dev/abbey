@@ -6,7 +6,7 @@ import { IoLogoYoutube } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
 import { FaYoutube, FaTiktok, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
-import IPhoneComponent from "@/components/IphoneComponent";
+import IPhoneComponent from "@/app/components/IPhoneComponent";
 
 //import  IPhoneComponent from '@/components/IphoneComponent';//
 
