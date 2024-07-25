@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import ImageUploader from '@/components/UploadZone';
-import  IPhoneComponent from '@/components/Iphonecomponent';
+import  IPhoneComponent from '@/components/IphoneComponent';
 
 
 interface ProfileImage {
