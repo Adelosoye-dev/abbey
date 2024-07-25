@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import ImageUploader from '@/components/UploadZone'; // Adjust the path as needed
 import IPhoneComponent from '@/components/IphoneComponent';

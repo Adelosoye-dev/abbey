@@ -1,6 +1,47 @@
 
 import { FaYoutube, FaTiktok, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 const IPhoneComponent = ({ links }) => {
+  const getIconComponent = (platform) => {
+    const link = linkData.find(link => link.platform === platform);
+    return link ? link.icon : null;
+  };
+  const getIconColor = (platform) => {
+    const link = linkData.find(link => link.platform === platform);
+    return link ? link.color : null;
+  };
+  const linkData = [
+      {
+        platform: 'YouTube',
+        icon: FaYoutube,
+        url: 'https://www.youtube.com',
+        color:"bg-[#FF0000]"
+      },
+      {
+        platform: 'TikTok',
+        icon: FaTiktok,
+        url: 'https://www.tiktok.com',
+        color:"bg-[#000000]"
+      },
+      {
+        platform: 'Twitter',
+        icon: FaTwitter,
+        url: 'https://www.twitter.com',
+        color:"bg-[#1DA1F2]"
+      },
+      {
+        platform: 'LinkedIn',
+        icon: FaLinkedin,
+        url: 'https://www.linkedin.com',
+        color:'bg-[#0077b5]'
+      },
+      {
+        platform: 'GitHub',
+        icon: FaGithub,
+        url: 'https://www.github.com',
+        color:'bg-[#000000]'
+      }
+    ];
+  
     return (
       <div className="flex flex-col w-[100%] h-full bg-white rounded-md justify-center items-center">
         <div className="relative w-76 md:w-[60%] lg:w-[80%] h-128 border-2 border-gray-300 rounded-3xl p-4 bg-white h-[70%]">
@@ -35,45 +76,5 @@ const IPhoneComponent = ({ links }) => {
   };
 
 
-const getIconComponent = (platform) => {
-  const link = linkData.find(link => link.platform === platform);
-  return link ? link.icon : null;
-};
-const getIconColor = (platform) => {
-  const link = linkData.find(link => link.platform === platform);
-  return link ? link.color : null;
-};
-const linkData = [
-    {
-      platform: 'YouTube',
-      icon: FaYoutube,
-      url: 'https://www.youtube.com',
-      color:"bg-[#FF0000]"
-    },
-    {
-      platform: 'TikTok',
-      icon: FaTiktok,
-      url: 'https://www.tiktok.com',
-      color:"bg-[#000000]"
-    },
-    {
-      platform: 'Twitter',
-      icon: FaTwitter,
-      url: 'https://www.twitter.com',
-      color:"bg-[#1DA1F2]"
-    },
-    {
-      platform: 'LinkedIn',
-      icon: FaLinkedin,
-      url: 'https://www.linkedin.com',
-      color:'bg-[#0077b5]'
-    },
-    {
-      platform: 'GitHub',
-      icon: FaGithub,
-      url: 'https://www.github.com',
-      color:'bg-[#000000]'
-    }
-  ];
 
   export default IPhoneComponent
