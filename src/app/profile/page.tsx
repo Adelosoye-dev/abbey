@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
-import ImageUploader from '@/app/components/UploadZone'; // Adjust the path as needed
-import IPhoneComponent from '@/app/components/IPhoneComponent';
+import ImageUploader from '@/components/UploadZone'; // Adjust the path as needed
+import IPhoneComponent from '@/components/IPhoneComponent';
 //import IPhoneComponent from '@/components/IPhoneComponent'; // Adjust the path and casing as needed//
 
 interface ProfileImage {
